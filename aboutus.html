@@ -1,126 +1,193 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn about Family Eatery in Thornwood, NY - Your neighborhood hangout for good food, great drinks, and better company." />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&family=Ramaraja&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <script
       src="https://kit.fontawesome.com/28019929b0.js"
       crossorigin="anonymous"
     ></script>
-    <title>Bar website</title>
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/aboutus.css" />
+    <title>Our Story - Family Eatery & Cocktail Bar</title>
   </head>
   <body>
-    <div class="logo">
+    <header>
       <nav>
         <ul>
-          <li><a href="home-page.html">Home</a></li>
-          <li><a href="#">About us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html" class="active">About us</a></li>
         </ul>
         <div class="logo-container">
-          <img src="img/logo.png" alt="Bar Logo" />
+          <a href="index.html">
+            <img src="img/logo.png" alt="Family Eatery Logo" />
+          </a>
         </div>
         <ul>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="contactus.html">Contact us</a></li>
         </ul>
       </nav>
-    </div>
+    </header>
 
-    <div class="first_image">
-      <h2>
-        LIQUD <br />
-        MAESTRO
-      </h2>
+    <main>
+      <section class="hero-about">
+        <div class="hero-content">
+          <h2 class="brand-name">FAMILY<br />EATERY</h2>
+          <p class="tagline">Welcome to</p>
+          <h1 class="page-title">OUR STORY</h1>
+          <p class="hero-description">
+            Your neighborhood spot for great food, amazing drinks, and good company
+          </p>
+          <a href="#story" class="btn-explore">DISCOVER MORE</a>
+        </div>
+      </section>
 
-      <h4>indulge in</h4>
+      <section class="story-section" id="story">
+        <div class="container">
+          <div class="story-content">
+            <h3 class="section-title">
+              Right here in Thornwood, New York, we're more than just a restaurant—we're your 
+              neighborhood hangout where everyone feels at home.
+            </h3>
+            <p class="story-description">
+              Whether you're stopping by for a family dinner, catching up with friends over drinks, 
+              or celebrating something special, we've got you covered. Our bartenders know their way 
+              around a cocktail shaker, and our kitchen serves up comfort food that hits the spot 
+              every time. Pull up a chair, relax, and let us take care of the rest.
+            </p>
+          </div>
+        </div>
+      </section>
 
-      <h1><strong> ABOUT US</strong></h1>
+      <section class="image-showcase"></section>
 
-      <h6>
-        Step into a world of <br />extraordinary flavors and <br />unrivaled
-        mixology expertise
-      </h6>
-
-      <h5>EXPLORE</h5>
-    </div>
-
-    <div class="second_image">
-      <h3>
-        Liquid Maestro, the newest hotspot in <br />
-        downtown Los Angeles. Our skilled mixologists <br />
-        are passionate about crafting exceptional <br />cocktails that will
-        delight your senses.
-      </h3>
-
-      <br />
-
-      <p>
-        With an ambiance that exudes elegance and a commitment to delivering
-        <br />
-        unforgettable experiences, Liquid Maestro is the ultimate destination
-        for cocktail<br />
-        enthusiasts. Join us for an exquisite journey into the world of liquid
-        artistry.
-      </p>
-    </div>
-
-    <div class="third_image"></div>
-
-    <div class="last_second">
-      <p>Cocktails Menu</p>
-
-      <div clas="text">
-        <h5>INDULGENT HARMONY</h5>
-        <h1>
-          Symphony<br />
-          in God
-        </h1>
-        <h6>
-          Aged bourbon, honey, ginger. <br />
-          Experience the symphony of <br />
-          flavors as aged bourbon blends <br />seamlessly with the sweetness of
-          <br />honey & the subtle spice of ginger.
-        </h6>
-      </div>
-    </div>
+      <section class="cocktail-feature" id="cocktails">
+        <div class="container">
+          <p class="feature-label">Cocktails Menu</p>
+          <div class="cocktail-scroll-container">
+            <div class="cocktail-card">
+              <div class="cocktail-image">
+                <img src="images/cocktails/symphony-in-gold.jpg" alt="Symphony in Gold Cocktail" />
+              </div>
+              <h4 class="cocktail-subtitle">INDULGENT HARMONY</h4>
+              <h2 class="cocktail-name">Symphony<br />in Gold</h2>
+              <p class="cocktail-description">
+                Aged bourbon, honey, ginger.<br />
+                Experience the symphony of flavors as aged bourbon blends
+                seamlessly with the sweetness of honey & the subtle spice of ginger.
+              </p>
+            </div>
+            
+            <div class="cocktail-card">
+              <div class="cocktail-image">
+                <img src="images/cocktails/sunset-breeze.png" alt="Sunset Breeze Cocktail" />
+              </div>
+              <h4 class="cocktail-subtitle">TROPICAL PARADISE</h4>
+              <h2 class="cocktail-name">Sunset<br />Breeze</h2>
+              <p class="cocktail-description">
+                Rum, passion fruit, coconut.<br />
+                Transport yourself to a tropical paradise with this refreshing blend
+                of premium rum, tangy passion fruit, and creamy coconut.
+              </p>
+            </div>
+            
+            <div class="cocktail-card">
+              <div class="cocktail-image">
+                <img src="images/cocktails/velvet-martini.jpeg" alt="Velvet Martini Cocktail" />
+              </div>
+              <h4 class="cocktail-subtitle">CLASSIC ELEGANCE</h4>
+              <h2 class="cocktail-name">Velvet<br />Martini</h2>
+              <p class="cocktail-description">
+                Vodka, vermouth, olive.<br />
+                A timeless classic perfected with premium vodka and dry vermouth,
+                garnished with hand-picked olives for sophistication.
+              </p>
+            </div>
+            
+            <div class="cocktail-card">
+              <div class="cocktail-image">
+                <img src="images/cocktails/golden-zest.jpeg" alt="Golden Zest Cocktail" />
+              </div>
+              <h4 class="cocktail-subtitle">CITRUS SENSATION</h4>
+              <h2 class="cocktail-name">Golden<br />Zest</h2>
+              <p class="cocktail-description">
+                Gin, lemon, elderflower.<br />
+                A refreshing citrus sensation featuring botanical gin,
+                fresh lemon zest, and delicate elderflower liqueur.
+              </p>
+            </div>
+            
+            <div class="cocktail-card">
+              <div class="cocktail-image">
+                <img src="images/cocktails/inferno-margarita.jpeg" alt="Inferno Margarita Cocktail" />
+              </div>
+              <h4 class="cocktail-subtitle">SPICY DELIGHT</h4>
+              <h2 class="cocktail-name">Inferno<br />Margarita</h2>
+              <p class="cocktail-description">
+                Tequila, jalapeño, lime.<br />
+                Turn up the heat with this spicy twist on the classic margarita,
+                featuring premium tequila and fresh jalapeño.
+              </p>
+            </div>
+          </div>
+          <p class="scroll-hint">← Swipe to explore more →</p>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer">
-      <div class="footer-logo">
-        <img src="images/logo.png" alt="logo" class="logo" />
-      </div>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="img/logo.png" alt="Family Eatery Logo" class="logo" />
+        </div>
 
-      <div class="footer-links">
-        <div class="footer-column">
-          <h3>LOCATION</h3>
-          <a>1000, broadway Thron wood</a>
-          <a>,New York, 10594</a>
-          <a>Phone: (914)579-2610</a>
-        </div>
-        <div class="footer-column">
-          <h3>KITCHEN HOURS</h3>
-          <a>Monday Closed</a>
-          <a>Tuesday-Thu 12:00pm-10:00pm</a>
-          <a>Friday-Sat 12:00pm-12:00pm</a>
-          <a>Sunday 12:00pm-9:00pm</a>
-        </div>
-        <div class="footer-column">
-          <h3>QUICK LINKS</h3>
-          <a href="home-page.html">Home Page</a>
-          <a href="#">About Us</a>
-          <a href="gallery.html">Gallery</a>
-          <a href="contactus.html">Contact Us</a>
-        </div>
-      </div>
+        <div class="footer-content">
+          <div class="footer-links">
+            <div class="footer-column">
+              <h3>LOCATION</h3>
+              <a>1000 Broadway Thornwood</a>
+              <a>New York, 10594</a>
+              <a>Phone: (914) 579-2610</a>
+            </div>
+            <div class="footer-column">
+              <h3>KITCHEN HOURS</h3>
+              <a>Monday: Closed</a>
+              <a>Tue-Thu: 12:00pm-10:00pm</a>
+              <a>Fri-Sat: 12:00pm-12:00am</a>
+              <a>Sunday: 12:00pm-9:00pm</a>
+            </div>
+            <div class="footer-column">
+              <h3>QUICK LINKS</h3>
+              <a href="index.html">Home Page</a>
+              <a href="aboutus.html">About Us</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="contactus.html">Contact Us</a>
+            </div>
+          </div>
 
-      <div class="footer-info">
-        <i class="fa-solid fa-phone"></i> <i class="fa-solid fa-envelope"></i
-        ><i class="fa-brands fa-instagram"></i
-        ><i class="fa-brands fa-facebook"></i>
+          <div class="footer-social">
+            <a href="tel:+19145792610" aria-label="Call us">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+            <a href="mailto:info@bar141.com" aria-label="Email us">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="#" aria-label="Follow us on Instagram" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="Follow us on Facebook" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

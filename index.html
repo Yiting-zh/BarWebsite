@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Family Eatery & Cocktail Bar in Thornwood, NY - Your neighborhood spot for great food, handcrafted drinks, and good times with friends and family." />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&family=Ramaraja&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <script
@@ -15,19 +16,23 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="styles/home-page.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
-    <title>Home page</title>
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/home-page-new.css" />
+    <title>Family Eatery & Cocktail Bar - Home</title>
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="home-page.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="aboutus.html">About us</a></li>
         </ul>
         <div class="logo-container">
-          <img src="img/logo.png" alt="Bar Logo" />
+          <a href="index.html">
+            <img src="img/logo.png" alt="Family Eatery Logo" />
+          </a>
         </div>
         <ul>
           <li><a href="gallery.html">Gallery</a></li>
@@ -37,130 +42,178 @@
     </header>
 
     <main>
-      <div class="section1">
-        <h1 class="animate__animated animate__heartBeat">FAMILY EATERY</h1>
-        <h2>COCKTAIL BAR</h2>
-        <button class="order-btn">ORDER NOW</button>
-        <img src="img/1st Section image.png" alt="bar picture" />
-      </div>
-
-      <div class="section2">
-        <h3>Cocktails & Shots</h3>
-        <div class="drink-pics">
-          <img src="img/drink1.png" alt="Tropical Storm Cocktails" />
-          <img src="img/drink2.png" alt="Dry gin" />
-          <img src="img/drink3.png" alt="Tequila Sunrise" />
-          <img src="img/drink4.png" alt="Bar hill gin" />
+      <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <img src="img/1st Section image.png" alt="Elegant bar interior with ambient lighting" class="hero-bg" />
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span>EST. 2020</span>
+          </div>
+          <h1 class="hero-title animate__animated animate__heartBeat">FAMILY EATERY</h1>
+          <div class="hero-divider">
+            <span class="divider-icon">✦</span>
+          </div>
+          <h2 class="hero-subtitle">COCKTAIL BAR</h2>
+          <p class="hero-tagline">Great Food • Handcrafted Drinks • Good Times</p>
+          <div class="hero-actions">
+            <a href="contactus.html#reservation" class="btn order-btn">ORDER NOW</a>
+            <a href="aboutus.html" class="btn btn-outline">OUR STORY</a>
+          </div>
         </div>
-      </div>
+        <div class="scroll-indicator">
+          <span>Scroll to explore</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </section>
 
-      <div class="section3">
-        <h3>Menu & Interior</h3>
+      <section class="drinks-section section-dark">
         <div class="container">
-          <div class="picture">
-            <img src="img/food2.png" class="img2" alt="spagetthi" />
-            <img src="img/food3.png" class="img3" alt="bread" />
-            <img src="img/food4.png" class="img4" alt="bar environment" />
-            <img src="img/food5.png" class="img5" alt="bar interior" />
-            <img src="img/food1.png" class="img1" alt="two cooktails" />
-            <img src="img/food6.png" class="img6" alt="spagetthi" />
-            <img src="img/food7.png" class="img7" alt="bread" />
-            <img src="img/food8.png" class="img8" alt="bar environment" />
-            <img src="img/food9.png" class="img9" alt="bar interior" />
-            <img src="img/food10.png" class="img10" alt="two cooktails" />
+          <h3 class="section-title">Cocktails & Shots</h3>
+          <p class="section-subtitle">Handcrafted with passion, served with style</p>
+          <div class="drinks-grid">
+            <div class="drink-card">
+              <img src="img/drink1.png" alt="Tropical Storm Cocktails" />
+            </div>
+            <div class="drink-card">
+              <img src="img/drink2.png" alt="Classic Gin" />
+            </div>
+            <div class="drink-card">
+              <img src="img/drink3.png" alt="Tequila Sunrise" />
+            </div>
+            <div class="drink-card">
+              <img src="img/drink4.png" alt="Barrel Aged Gin" />
+            </div>
+          </div>
+          <div class="drinks-cta">
+            <a href="aboutus.html#cocktails" class="btn btn-gold">View Full Menu</a>
+            <p class="drinks-note">Over 20 signature cocktails to choose from</p>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="section4">
-        <div class="left">
-          <img src="img/bar141.png" alt="bottle of wine" />
-        </div>
-        <div class="right">
-          <div class="form">
-            <div class="text">
-              <p class="text-newsletters">NEWSLETTER SIGN UP</p>
-              <h4>CLAIM 10% OFF YOUR FIRST ORDER</h4>
-              <p class="text-regular">
-                Get 10% off your first purchase <br />
-                when you sign up today. You’ll also get access to exclusive
-                sales and deals only available to our subscribers.
-              </p>
-            </div>
-            <form action="">
-              <label for="email" class="label"></label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                class="input-field"
-                placeholder="Your Email Address"
-                required
-              />
-              <button type="submit" class="subscribe-btn">SUBSCRIBE</button>
-            </form>
-            <div class="middle">
-              <div class="block">
-                <img src="img/champagne.png" alt="champagne" />
-                <p class="text-title">Great Daily Deal</p>
-                <p class="text-small">
-                  We have over 10,000 Reviews on Trustpilot.
-                </p>
-              </div>
-              <div class="block">
-                <img src="img/hourglass.png" alt="hourglass" />
-                <p class="text-title">Next Day Delivery</p>
-                <p class="text-small">
-                  Order by 2PM Mon - Thur for Next Working Day Delivery
-                </p>
-              </div>
-            </div>
-            <div class="block-big">
-              <img src="img/removebg.png" alt="shaking bottle" />
-              <p class="text-title-big">BECOME A DRINK EXPEERT</p>
-              <p class="text-brown">
-                Get cocktail recipes, wine guides, and the <br />latest food
-                news when you sign up for <br />
-                newsletters from our family of brands.
-              </p>
+      <section class="gallery-section section-dark">
+        <div class="container">
+          <h3 class="section-title">Menu & Interior</h3>
+          <div class="gallery-grid-container">
+            <div class="gallery-grid">
+              <img src="img/food2.png" class="grid-img img2" alt="Delicious spaghetti dish" />
+              <img src="img/food3.png" class="grid-img img3" alt="Fresh artisan bread" />
+              <img src="img/food4.png" class="grid-img img4" alt="Cozy bar environment" />
+              <img src="img/food5.png" class="grid-img img5" alt="Modern bar interior" />
+              <img src="img/food1.png" class="grid-img img1" alt="Signature cocktails" />
+              <img src="img/food6.png" class="grid-img img6" alt="Pasta special" />
+              <img src="img/food7.png" class="grid-img img7" alt="Appetizer selection" />
+              <img src="img/food8.png" class="grid-img img8" alt="Bar setting" />
+              <img src="img/food9.png" class="grid-img img9" alt="Elegant interior design" />
+              <img src="img/food10.png" class="grid-img img10" alt="House cocktails" />
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section class="newsletter-section">
+        <div class="newsletter-container">
+          <div class="newsletter-image">
+            <img src="img/bar141.png" alt="Premium wine bottle" />
+          </div>
+          <div class="newsletter-content">
+            <div class="newsletter-form-box">
+              <div class="newsletter-header">
+                <p class="newsletter-label">NEWSLETTER SIGN UP</p>
+                <h4 class="newsletter-title">CLAIM 10% OFF YOUR FIRST ORDER</h4>
+                <p class="newsletter-description">
+                  Get 10% off your first purchase when you sign up today. You'll also get access to exclusive
+                  sales and deals only available to our subscribers.
+                </p>
+              </div>
+              <form action="" class="newsletter-form">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="newsletter-input"
+                  placeholder="Your Email Address"
+                  required
+                />
+                <button type="submit" class="btn subscribe-btn">SUBSCRIBE</button>
+              </form>
+              
+              <div class="features-grid">
+                <div class="feature-card">
+                  <img src="img/champagne.png" alt="Premium deals icon" />
+                  <p class="feature-title">Great Daily Deal</p>
+                  <p class="feature-description">
+                    We have over 10,000 Reviews on Trustpilot.
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <img src="img/hourglass.png" alt="Quick delivery icon" />
+                  <p class="feature-title">Next Day Delivery</p>
+                  <p class="feature-description">
+                    Order by 2PM Mon - Thur for Next Working Day Delivery
+                  </p>
+                </div>
+              </div>
+              
+              <div class="expertise-card">
+                <img src="img/removebg.png" alt="Mixology expertise" />
+                <p class="expertise-title">BECOME A DRINK EXPERT</p>
+                <p class="expertise-description">
+                  Get cocktail recipes, wine guides, and the latest food
+                  news when you sign up for newsletters from our family of brands.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-      <div class="footer-logo">
-        <img src="images/logo.png" alt="logo" class="logo" />
-      </div>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="img/logo.png" alt="Bar 141 Logo" class="logo" />
+        </div>
 
-      <div class="footer-links">
-        <div class="footer-column">
-          <h3>LOCATION</h3>
-          <a>1000, broadway Thron wood</a>
-          <a>,New York, 10594</a>
-          <a>Phone: (914)579-2610</a>
-        </div>
-        <div class="footer-column">
-          <h3>KITCHEN HOURS</h3>
-          <a>Monday Closed</a>
-          <a>Tuesday-Thu 12:00pm-10:00pm</a>
-          <a>Friday-Sat 12:00pm-12:00pm</a>
-          <a>Sunday 12:00pm-9:00pm</a>
-        </div>
-        <div class="footer-column">
-          <h3>QUICK LINKS</h3>
-          <a href="home-page.html">Home Page</a>
-          <a href="#">About Us</a>
-          <a href="gallery.html">Gallery</a>
-          <a href="contactus.html">Contact Us</a>
-        </div>
-      </div>
+        <div class="footer-content">
+          <div class="footer-links">
+            <div class="footer-column">
+              <h3>LOCATION</h3>
+              <a>1000 Broadway Thornwood</a>
+              <a>New York, 10594</a>
+              <a>Phone: (914) 579-2610</a>
+            </div>
+            <div class="footer-column">
+              <h3>KITCHEN HOURS</h3>
+              <a>Monday: Closed</a>
+              <a>Tue-Thu: 12:00pm-10:00pm</a>
+              <a>Fri-Sat: 12:00pm-12:00am</a>
+              <a>Sunday: 12:00pm-9:00pm</a>
+            </div>
+            <div class="footer-column">
+              <h3>QUICK LINKS</h3>
+              <a href="index.html">Home Page</a>
+              <a href="aboutus.html">About Us</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="contactus.html">Contact Us</a>
+            </div>
+          </div>
 
-      <div class="footer-info">
-        <i class="fa-solid fa-phone"></i> <i class="fa-solid fa-envelope"></i
-        ><i class="fa-brands fa-instagram"></i
-        ><i class="fa-brands fa-facebook"></i>
+          <div class="footer-social">
+            <a href="tel:+19145792610" aria-label="Call us">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+            <a href="mailto:info@bar141.com" aria-label="Email us">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="#" aria-label="Follow us on Instagram" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="Follow us on Facebook" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
