@@ -58,7 +58,7 @@
   --spacing-3xl: 6rem;    /* 96px */
   
   /* === Layout === */
-  --nav-height: 3rem;     /* 96px */
+  --nav-height: 3rem;     /* 48px */
   --max-width: 1440px;
   --container-padding: var(--spacing-lg);
   
